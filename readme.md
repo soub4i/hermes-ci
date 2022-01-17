@@ -10,7 +10,7 @@ Hermes is the winged herald and messenger of the Olympian gods. In addition, he 
 
 > DO NOT USE IT IN PRODUCTION
 
-> Status: The library is currently undergoing heavy development with frequent, breaking API changes.
+> Status: The library is currently undergoing heavy development with frequent, breaking API changesç-.
 
 ## How it works
 

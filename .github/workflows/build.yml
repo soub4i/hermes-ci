@@ -18,8 +18,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         run: |
-          go build ./backend
-          go build ./runner
+          make -C ./backend build
+          make -C ./runner build
   test:
     strategy:
       matrix:
