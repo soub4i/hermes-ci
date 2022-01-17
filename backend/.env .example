@@ -1,0 +1,5 @@
+MONGO_URI=
+DB=hermes
+PORT=8080
+APP_ENV=development
+REDIS=localhost:6379

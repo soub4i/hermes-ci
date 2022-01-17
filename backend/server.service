@@ -1,0 +1,14 @@
+[Unit]
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/<MY_GO_APP>
+WorkingDirectory=/home/user/<MY_GO_APP_HOME_DIR>
+User=<MY_GO_APP_USER>
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n

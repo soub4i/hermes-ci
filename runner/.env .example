@@ -1,0 +1,4 @@
+MONGO_URI=
+DB=hermes
+APP_ENV=development
+REDIS=localhost:6379

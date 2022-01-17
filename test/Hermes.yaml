@@ -1,0 +1,3 @@
+name: Build
+version: 1.0.0
+schema: docker
