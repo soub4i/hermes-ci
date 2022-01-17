@@ -1,6 +1,9 @@
 
 <template>
-  <div v-if="job">
+  <div
+    class="mx-auto w-3/4"
+    v-if="job"
+  >
     <div class="page-header">
 
       <h1 class="mb-2 pb-2 border-b border-white">{{ job.name }}</h1>

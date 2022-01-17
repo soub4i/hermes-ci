@@ -252,7 +252,7 @@ export default Vue.extend({
     async getHooks() {
       try {
         const { data } = await this.$axios.get(
-          `${this.process.env.gitHubUrl}repos/${this?.user?.login}/${this?.id}/hooks`
+          `${process.env.gitHubUrl}repos/${this?.user?.login}/${this?.id}/hooks`
         )
         this.hooks = data
       } catch (error) {
@@ -262,7 +262,7 @@ export default Vue.extend({
     async getRepo() {
       try {
         const { data } = await this.$axios.get(
-          `${this.process.env.gitHubUrl}repos/${this?.user?.login}/${this?.id}`
+          `${process.env.gitHubUrl}repos/${this?.user?.login}/${this?.id}`
         )
         this.repo = data
       } catch (error) {
@@ -272,7 +272,7 @@ export default Vue.extend({
     createHook() {
       try {
         this.$axios.post(
-          `${this.process.env.gitHubUrl}repos/${this?.user?.login}/${this?.id}/hooks`,
+          `${process.env.gitHubUrl}repos/${this?.user?.login}/${this?.id}/hooks`,
           {
             name: 'web',
             active: true,
@@ -296,7 +296,7 @@ export default Vue.extend({
     },
     async getJobs() {
       const { data } = await this.$axios.get(
-        `${this.process.env.baseUrl}/github/${this?.repo?.id}`,
+        `${process.env.baseUrl}/github/${this?.repo?.id}`,
         {}
       )
       this.jobs = data || []
